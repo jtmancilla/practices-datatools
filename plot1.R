@@ -1,5 +1,5 @@
 
-library(data.table)
+
 data <- fread("power_consumption.txt", na.strings="?", colClasses ="character")
 
 D3 <- data[data$"Date" %in% c("1/2/2007","2/2/2007"),]
